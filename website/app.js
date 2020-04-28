@@ -27,9 +27,9 @@ function performAction() {
 
       postData('/addWeather', data).then(() => {
         getEntry().then((data) => {
-          document.getElementById('date').textContent = data.date;
-          document.getElementById('temp').textContent = data.temperature;
-          document.getElementById('content').textContent = data.content;
+          document.getElementById('date').innerHTML = data.date;
+          document.getElementById('temp').innerHTML = data.temperature;
+          document.getElementById('content').innerHTML = data.content;
 
         })
       })
